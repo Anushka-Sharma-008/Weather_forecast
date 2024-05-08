@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast⛅</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shanti&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="globe-animation">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./globevideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <form id="weatherForm">
+            <label for="countrySelect">SELECT A COUNTRY:</label>
+            <select id="countrySelect">
+            </select>
+            <label for="citySelect">SELECT A CITY:</label>
+            <select id="citySelect">
+            </select>
+            <button type="submit">GET WEATHER!</button>
+        </form>
+        
+        <div id="weatherData"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
